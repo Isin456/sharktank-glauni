@@ -1,9 +1,11 @@
-<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+
+        
+        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shark Tank TechFest GLAU 2K26 - Sponsorship Brochure</title>
+    <title>Shark Tank TechFest GLAU 2K26 - Sponsorship & Investment Brochure</title>
     <style>
         * {
             margin: 0;
@@ -47,24 +49,8 @@
         }
 
         .logo {
-            width: 80px;
-            height: 80px;
-            background: rgba(255,255,255,0.95);
-            border-radius: 8px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: #1a472a;
-            font-size: 14px;
-            text-align: center;
-        }
-
-        .logo-text {
-            font-size: 11px;
-            font-weight: bold;
-            color: #1a472a;
-            line-height: 1.2;
         }
 
         .tech-fest-badge {
@@ -161,7 +147,7 @@
         .tagline {
             margin-top: 6px;
             font-style: italic;
-            font-size: 12px;
+            font-size: 13px;
             opacity: 0.95;
         }
 
@@ -322,32 +308,32 @@
             text-align: center;
         }
 
-        /* stacked coordinator rows */
-        .coordinator-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            background: rgba(255,255,255,0.08);
-            padding: 10px 15px;
-            border-radius: 6px;
-            margin-bottom: 8px;
+        .coordinator-card {
+            background: rgba(255,255,255,0.15);
+            padding: 14px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            text-align: left;
         }
 
-        .coord-left {
-            font-size: 14px;
-        }
-
-        .coord-left strong {
+        .coordinator-card strong {
             display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #ffd60a;
+            margin-bottom: 4px;
         }
 
-        .coord-right {
-            text-align: right;
-            font-size: 13px;
+        .coordinator-name {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
         }
 
-        .coord-right div {
-            margin-bottom: 2px;
+        .coordinator-contact {
+            font-size: 10px;
+            opacity: 0.9;
+            line-height: 1.5;
         }
 
         .divider {
@@ -366,225 +352,250 @@
         }
 
         @media print {
-            body {
-                padding: 0;
-            }
+            body { padding: 0; }
+            .container { box-shadow: none; }
+            .page-1, .page-2 { page-break-after: always; }
+        }
+
+        /* Responsive: phone & tablet */
+        @media only screen and (max-width: 768px) {
+            body { padding: 10px; }
+
             .container {
+                width: 100%;
+                margin: 0;
                 box-shadow: none;
             }
-            .page-1, .page-2 {
-                page-break-after: always;
+
+            .page-1,
+            .page-2 {
+                padding: 30px 20px;
+                min-height: auto;
+            }
+
+            .header {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .main-title h1 { font-size: 34px; }
+            .main-title p { font-size: 18px; }
+
+            .highlight-box,
+            .why-sponsor,
+            .options-grid,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-button {
+                width: 100%;
+                padding: 14px 10px;
+                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- PAGE 1: COVER -->
-        <div class="page-1">
-            <div class="header">
-                <div class="logo">
-                    <div class="logo-text">GLA<br>UNIV</div>
+<div class="container">
+    <!-- PAGE 1 -->
+    <div class="page-1">
+        <div class="header">
+            <div class="logo" style="background:none; width:auto; height:auto; padding:0;">
+                <!-- Keep 1000103359.jpeg in same folder as this HTML -->
+                <img src="gla-logo.jpeg" alt="GLA University Mathura"
+                     style="height:70px; width:auto; display:block;">
+            </div>
+            <div class="tech-fest-badge">TechFest GLAU 2K26</div>
+        </div>
+
+        <div class="main-title">
+            <h1>SHARK TANK</h1>
+            <p>Sponsorship & Investment Opportunities</p>
+        </div>
+
+        <div class="event-highlights">
+            <div class="highlight-box">
+                <div class="highlight-item">
+                    <strong>📅 Date</strong>
+                    <span>30th January, 2026</span>
                 </div>
-                <div class="tech-fest-badge">TechFest GLAU 2K26</div>
-            </div>
-
-            <div class="main-title">
-                <h1>SHARK TANK</h1>
-                <p>Sponsorship & Investment Opportunities</p>
-            </div>
-
-            <div class="event-highlights">
-                <div class="highlight-box">
-                    <div class="highlight-item">
-                        <strong>📅 Date</strong>
-                        <span>30th January, 2026</span>
-                    </div>
-                    <div class="highlight-item">
-                        <strong>⏰ Time</strong>
-                        <span>10:30 AM Onwards</span>
-                    </div>
-                    <div class="highlight-item">
-                        <strong>📍 Venue</strong>
-                        <span>1043, AB 12, GLA University</span>
-                    </div>
-                    <div class="highlight-item">
-                        <strong>👥 Expected Footfall</strong>
-                        <span>250+ Students, Faculty & Visitors</span>
-                    </div>
+                <div class="highlight-item">
+                    <strong>⏰ Time</strong>
+                    <span>10:30 AM Onwards</span>
                 </div>
-            </div>
-
-            <button class="cta-button">Become an Investor / Partner</button>
-
-            <div class="footer-cover">
-                <p>A Student-Run Pitching Contest | Presented by Office of Student's Welfare</p>
-                <p class="tagline">Invest well as the great values of your company.</p>
+                <div class="highlight-item">
+                    <strong>📍 Venue</strong>
+                    <span>1043, AB 12, GLA University</span>
+                </div>
+                <div class="highlight-item">
+                    <strong>👥 Expected Footfall</strong>
+                    <span>250+ Students, Faculty & Visitors</span>
+                </div>
             </div>
         </div>
 
-        <!-- PAGE 2: CONTENT -->
-        <div class="page-2">
-            <div class="page-2-title">
-                <p>Sponsorship & Investment Details</p>
-                <h2>Partner With Us</h2>
-            </div>
+        <button class="cta-button">Become an Investor / Partner</button>
 
-            <div class="divider"></div>
-
-            <!-- WHY SPONSOR SECTION -->
-            <div class="section">
-                <div class="section-title">Why Join Shark Tank?</div>
-                <div class="why-sponsor">
-                    <div class="sponsor-card">
-                        <h3>🎯 Reach Young Talent</h3>
-                        <p>Connect with motivated students who are future customers and potential interns.</p>
-                    </div>
-                    <div class="sponsor-card">
-                        <h3>✨ Brand Visibility</h3>
-                        <p>Gain positive brand exposure at a prestigious college-level flagship event.</p>
-                    </div>
-                    <div class="sponsor-card">
-                        <h3>🚀 Support Innovation</h3>
-                        <p>Champion entrepreneurship and foster local innovation in the community.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SPONSORSHIP OPTIONS -->
-            <div class="section">
-                <div class="section-title">Support Options</div>
-                <div class="options-grid">
-                    <div class="option-card">
-                        <h3>Goodies & Hampers</h3>
-                        <ul>
-                            <li>Minimum: ₹10,000 worth goodies</li>
-                            <li>Branded notebooks, pens, bottles</li>
-                            <li>T‑shirts and tech accessories</li>
-                            <li>Gift vouchers & discount coupons</li>
-                            <li>Snacks or sample products</li>
-                        </ul>
-                    </div>
-                    <div class="option-card">
-                        <h3>Cash Support</h3>
-                        <ul>
-                            <li>Minimum: ₹10,000</li>
-                            <li>Higher contributions welcome</li>
-                            <li>Flexible payment schedule</li>
-                            <li>Clear written agreement</li>
-                        </ul>
-                    </div>
-                    <div class="option-card">
-                        <h3>Hybrid / In‑Kind</h3>
-                        <ul>
-                            <li>Part‑items & part‑cash</li>
-                            <li>Gift vouchers and promo codes</li>
-                            <li>Printing, banners, stage setup</li>
-                            <li>Custom support on request</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- WHAT YOU RECEIVE -->
-            <div class="section">
-                <div class="section-title">What You Receive</div>
-                <div class="benefits-grid">
-                    <div class="benefit-item">
-                        <strong>🏆 Event Promotion</strong>
-                        <span>Logo on event banners, flags and selected promotional materials at the venue.</span>
-                    </div>
-                    <div class="benefit-item">
-                        <strong>📢 Live Recognition</strong>
-                        <span>Announcements and thanks during the event in front of the audience.</span>
-                    </div>
-                    <div class="benefit-item">
-                        <strong>🎁 Outreach Space</strong>
-                        <span>Permission to place leaflets, coupons or stall space near registration (on request).</span>
-                    </div>
-                    <div class="benefit-item">
-                        <strong>📜 Appreciation</strong>
-                        <span>Certificate of appreciation and a signed receipt after the event.</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUICK STEPS -->
-            <div class="section">
-                <div class="section-title">How to Confirm</div>
-                <div class="quick-steps">
-                    <ol>
-                        <li><strong>Choose your option:</strong> Goodies, Cash or Hybrid.</li>
-                        <li><strong>Email the coordinator</strong> with company name, contact person, phone, email and chosen option.</li>
-                        <li><strong>Review & sign</strong> the short confirmation document received on email.</li>
-                        <li><strong>Send goodies / transfer amount</strong> as per the written agreement.</li>
-                        <li><strong>Receive receipt & certificate</strong> after successful completion of the event.</li>
-                    </ol>
-                </div>
-            </div>
-
-            <!-- CONTACT SECTION -->
-            <div class="section">
-                <div class="contact-section">
-                    <h3>📞 Get in Touch</h3>
-
-                    <div class="coordinator-row">
-                        <div class="coord-left">
-                            <strong>Harsh Agrawal</strong>
-                            Lead Coordinator, BBA MS
-                        </div>
-                        <div class="coord-right">
-                            <div>📧 harsh.agrawal1_bba.ms24@gla.ac.in</div>
-                            <div>📱 +91 9897516886</div>
-                        </div>
-                    </div>
-
-                    <div class="coordinator-row">
-                        <div class="coord-left">
-                            <strong>Nrisingha Kripa Das</strong>
-                            Co‑Coordinator, BBA MS
-                        </div>
-                        <div class="coord-right">
-                            <div>📧 nrisingha.das_bba.ms25@gla.ac.in</div>
-                            <div>📱 +91 9547695705</div>
-                        </div>
-                    </div>
-
-                    <div class="coordinator-row">
-                        <div class="coord-left">
-                            <strong>Krishnangi Agrawal</strong>
-                            Co‑Coordinator, BBA MS
-                        </div>
-                        <div class="coord-right">
-                            <div>📧 krishnangi.agrawal_bba.ms25@gla.ac.in</div>
-                            <div>📱 +91 6396806250</div>
-                        </div>
-                    </div>
-
-                    <p style="margin-top: 15px; font-size: 12px; opacity: 0.9; text-align:center;">
-                        Please keep all communication in writing via official email IDs.
-                    </p>
-                </div>
-            </div>
-
-            <!-- IMPORTANT TERMS -->
-            <div class="section" style="background: #fff3cd; padding: 20px; border-radius: 8px; border-left: 4px solid #ffc107;">
-                <strong style="color: #856404;">⚠️ Important Terms</strong>
-                <ul style="margin-left: 20px; margin-top: 10px; color: #856404; font-size: 13px; line-height: 1.8;">
-                    <li>All agreements must be in writing. No verbal commitments will be considered final.</li>
-                    <li>Delivery of goodies / hampers should reach the venue or agreed address at least 2 days before the event, unless otherwise agreed in writing.</li>
-                    <li>Cash support must be transferred to the specified account or paid in cash / cheque before the event as per the written agreement.</li>
-                    <li>A simple signed receipt and a certificate of appreciation will be shared after the event.</li>
-                    <li>If investors wish to sit as "Sharks" on the judging panel, the minimum contribution amount is ₹20,000.</li>
-                    <li>If an investor decides to invest in any student idea, it will be a direct arrangement between the investor and the team; the university will not take any share in that investment.</li>
-                </ul>
-            </div>
-
-            <div class="footer">
-                <p>Shark Tank -- TechFest GLAU 2K26 | Office of Student's Welfare, GLA University, Mathura</p>
-                <p>Supporting Innovation • Enabling Entrepreneurship • Connecting Talent</p>
-            </div>
+        <div class="footer-cover">
+            <p>A Student-Run Pitching Contest | Office of Student's Welfare</p>
+            <p class="tagline">Invest well as the great values of your company.</p>
         </div>
     </div>
+
+    <!-- PAGE 2 -->
+    <div class="page-2">
+        <div class="page-2-title">
+            <p>Sponsorship & Investment Details</p>
+            <h2>Partner With Us</h2>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+            <div class="section-title">Why Join Shark Tank?</div>
+            <div class="why-sponsor">
+                <div class="sponsor-card">
+                    <h3>🎯 Reach Young Talent</h3>
+                    <p>Connect with motivated students who are future customers and potential interns.</p>
+                </div>
+                <div class="sponsor-card">
+                    <h3>✨ Brand Visibility</h3>
+                    <p>Showcase your brand at a flagship college-level event with strong on-campus buzz.</p>
+                </div>
+                <div class="sponsor-card">
+                    <h3>🚀 Support Innovation</h3>
+                    <p>Encourage entrepreneurship and local innovation in Mathura and nearby regions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Support Options</div>
+            <div class="options-grid">
+                <div class="option-card">
+                    <h3>Goodies & Hampers</h3>
+                    <ul>
+                        <li>Minimum: ₹10,000 worth goodies</li>
+                        <li>Branded stationery & bottles</li>
+                        <li>T‑shirts and tech accessories</li>
+                        <li>Gift vouchers / discount coupons</li>
+                        <li>Snacks or sample products</li>
+                    </ul>
+                </div>
+                <div class="option-card">
+                    <h3>Cash Support</h3>
+                    <ul>
+                        <li>Minimum: ₹10,000</li>
+                        <li>Higher amounts welcome</li>
+                        <li>Flexible payment schedule</li>
+                        <li>Short written agreement</li>
+                    </ul>
+                </div>
+                <div class="option-card">
+                    <h3>Hybrid / In‑Kind</h3>
+                    <ul>
+                        <li>Part‑goodies + part‑cash</li>
+                        <li>Gift vouchers & promo codes</li>
+                        <li>Printing, banners, stage setup</li>
+                        <li>Custom support on request</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">What You Receive</div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <strong>🏆 Event Promotion</strong>
+                    <span>Logo on event banners, flags, and selected promotional creatives at the venue.</span>
+                </div>
+                <div class="benefit-item">
+                    <strong>📢 Live Recognition</strong>
+                    <span>Thank‑you announcements and brand mentions during the event.</span>
+                </div>
+                <div class="benefit-item">
+                    <strong>🎁 Outreach Space</strong>
+                    <span>Permission to place leaflets, coupons or a small stall near registration (on request).</span>
+                </div>
+                <div class="benefit-item">
+                    <strong>📜 Appreciation</strong>
+                    <span>Certificate of appreciation and a simple signed receipt after the event.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">How to Confirm</div>
+            <div class="quick-steps">
+                <ol>
+                    <li><strong>Choose your option:</strong> Goodies, Cash, or Hybrid.</li>
+                    <li><strong>Email the coordinator</strong> with company name, contact person, phone, email, and option.</li>
+                    <li><strong>Review & sign</strong> the short sponsorship / investment confirmation document.</li>
+                    <li><strong>Send goodies or transfer amount</strong> as per the written agreement.</li>
+                    <li><strong>Receive receipt & certificate</strong> after successful completion of the event.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="contact-section">
+                <h3>📞 Get in Touch</h3>
+
+                <div class="coordinator-card">
+                    <strong>Lead Coordinator</strong>
+                    <div class="coordinator-name">Harsh Agrawal (BBA MS)</div>
+                    <div class="coordinator-contact">
+                        harsh.agrawal1_bba.ms24@gla.ac.in<br>
+                        +91 9897516886
+                    </div>
+                </div>
+
+                <div class="coordinator-card">
+                    <strong>Co‑Coordinator</strong>
+                    <div class="coordinator-name">Nrisingha Kripa Das (BBA MS)</div>
+                    <div class="coordinator-contact">
+                        nrisingha.das_bba.ms25@gla.ac.in<br>
+                        +91 9547695705
+                    </div>
+                </div>
+
+                <div class="coordinator-card">
+                    <strong>Co‑Coordinator</strong>
+                    <div class="coordinator-name">Krishnangi Agrawal (BBA MS)</div>
+                    <div class="coordinator-contact">
+                        krishnangi.agrawal_bba.ms25@gla.ac.in<br>
+                        +91 6396806250
+                    </div>
+                </div>
+
+                <p style="margin-top: 12px; font-size: 11px; opacity: 0.9; text-align:center;">
+                    Please keep all communication in writing via official email IDs.
+                </p>
+            </div>
+        </div>
+
+        <div class="section" style="background:#fff3cd; padding:20px; border-radius:8px; border-left:4px solid #ffc107;">
+            <strong style="color:#856404;">⚠️ Important Terms</strong>
+            <ul style="margin-left:20px; margin-top:10px; color:#856404; font-size:13px; line-height:1.8;">
+                <li>All agreements must be in writing over email. No verbal commitments will be treated as final.</li>
+                <li>Goodies / hampers should reach the venue or agreed address at least 2 days before the event, unless otherwise agreed in writing.</li>
+                <li>Cash support must be transferred to the specified account or paid in cash / cheque before the event as per the written agreement.</li>
+                <li>A signed receipt and certificate of appreciation will be shared after the event.</li>
+                <li>If investors wish to sit as “Sharks” on the judging panel, the minimum amount is ₹20,000.</li>
+                <li>If an investor decides to invest in any student idea, it is a direct arrangement between investor and team; the university takes no share in the investment.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Shark Tank — TechFest GLAU 2K26 | Office of Student's Welfare, GLA University, Mathura</p>
+            <p>Supporting Innovation • Enabling Entrepreneurship • Connecting Talent</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
+
+                    
